@@ -1,0 +1,40 @@
+body {
+	background-color: #f2f2f2;
+}
+
+a:hover {
+	color:#3085b0;
+}
+
+#title {
+	height:200px; 
+	width:75%; 
+	margin-left:260px; 
+	margin-top:-250px; 
+	position:absolute;
+	font-family:Trebuchet MS;
+	font-size:50px;
+	text-align:center;
+}
+
+#contentBackground {
+	height:600px; 
+	width:75%; 
+	position:absolute;
+	margin-left:260px;
+	margin-top:-110px;
+	background-color:#40b1eb
+}
+
+#initials {
+	font-family:Snap ITC;  
+	font-size:100px;
+	text-align:center;
+}
+	
+	
+	
+	
+	
+	
+	
