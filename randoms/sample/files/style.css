@@ -1,5 +1,5 @@
 body {
-	background-color: #fb8c03;
+	background-color: #f2f2f2;
 }
 
 a:hover {
@@ -12,6 +12,8 @@ a {
 
 #navButtons {
 	position:fixed;
+	margin-left:-10px;
+	width:15%;
 }
 
 #title {
