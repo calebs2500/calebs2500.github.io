@@ -23,11 +23,11 @@ a {
 	font-family:Source Sans Pro;
 	font-size:50px;
 	text-align:center;
-	font-weight:bold;
+	font-weight:normal;
 }
 
 #article {
-	font-family:Source Sans Pro;
+	font-family:Source Sans Pro ExtraLight;
 	font-size:24px;
 	font-weight:normal;
 	margin-left:10px;
@@ -42,10 +42,11 @@ a {
 }
 
 #sectionTitle {
-	font-family:Source Sans Pro;
+	font-family:Source Sans Pro ExtraLight;
 	font-size:50px;
 	text-align:center;
 	display:inline;
+	font-weight:bold;
 }
 
 #sectionParagraph {
