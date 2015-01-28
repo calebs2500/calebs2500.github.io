@@ -86,9 +86,6 @@ div.twitterList {
 	display:block;
 }
 
-#fifi012:hover #playerNamefifi012 {
-	display:block;
-}
 #Naydo99:hover #playerNameNaydo99 {
 	display:block;
 }
@@ -110,11 +107,11 @@ div.twitterList {
 }
 
 div.skinArea{
-	margin-top: -770px;
+	margin-top: -840px;
 	margin-left: 270px;
 	margin-right: 270px;
 	margin-bottom: 20px;
-	height: 770px;
+	height: 840px;
 }
 
 #skin {
