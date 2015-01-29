@@ -37,7 +37,7 @@ a {
 #contentBackground { 
 	margin-left:220px;
 	margin-top:-100px;
-	margin-right:20px;
+	margin-right:70px;
 	background-color:#EBEBEB
 }
 
@@ -51,4 +51,69 @@ a {
 
 #sectionParagraph {
 }
-	
+
+#twitter {
+	transition: margin-right 0.2s;
+	margin-top:100px;
+	position:fixed;
+	right:0px;
+}
+
+#twitter:hover {
+	margin-right:10px;	
+}
+
+#facebook {
+	transition: margin-right 0.2s;
+	margin-top:140px;
+	position:fixed;
+	right:0px;
+}
+
+#facebook:hover {
+	margin-right:10px;
+}
+
+#youtube {
+	transition: margin-right 0.2s;
+	margin-top:180px;
+	position:fixed;
+	right:0px;
+}
+
+#youtube:hover {
+	margin-right:10px;
+}
+
+#instagram {
+	transition: margin-right 0.2s;
+	margin-top:220px;
+	position:fixed;
+	right:0px;
+}
+
+#instagram:hover {
+	margin-right:10px;
+}
+
+#reddit {
+	transition: margin-right 0.2s;
+	margin-top:260px;
+	position:fixed;
+	right:0px;
+}
+
+#reddit:hover {
+	margin-right:10px;
+}
+
+#snapchat {
+	transition: margin-right 0.2s;
+	margin-top:300px;
+	position:fixed;
+	right:0px;
+}
+
+#snapchat:hover {
+	margin-right:10px;
+}
