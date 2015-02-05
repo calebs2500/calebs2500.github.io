@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	
+		<!--Developed by Caleb Stewart: calebs2500@gmail.com-->
+		
+		<title>Kink Lounge | Home</title>
+		
+		<link href="style.css" rel="stylesheet" type="text/css"> <!--Styles-->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'> <!--Font: Source Sans Pro-->
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	</head>
+	
+	<body>
+		<script>
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('header').addClass("isScrolled");
+			}
+			else{
+				$('header').removeClass("isScrolled");
+			}
+		});
+		</script>
+		
+		<script>
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('p#pageHeading').addClass("isScrolled");
+			}
+			else{
+				$('p#pageHeading').removeClass("isScrolled");
+			}
+		});
+		</script>
+		
+		<script>
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('div#navButtons').addClass("isScrolled");
+			}
+			else{
+				$('div#navButtons').removeClass("isScrolled");
+			}
+		});
+		</script>
+		
+		<header>
+			<p id="pageHeading">Kink Lounge Hub</p>
+			
+			<center>
+				<div id="navButtons">
+					<a href="http://officialkinklounge.github.io">Home</a>
+					<a href="http://officialkinklounge.github.io/about">About</a>
+					<a href="http://officialkinklounge.github.io/members">Members</a>
+					<a href="http://officialkinklounge.github.io/apply">Apply</a>
+					<a href="http://officialkinklounge.github.io/contact">Contact</a>
+				</div>
+			</center>
+		</header>
+		
+		<div style="height:10000px;">
+		</div>
+	</body>
+</html>
