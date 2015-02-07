@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	
+		<!--Developed by Caleb Stewart: calebs2500@gmail.com-->
+		
+		<title>Title | Home</title>
+		
+		<link href="style.css" rel="stylesheet" type="text/css"> <!--Styles-->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'> <!--Font: Source Sans Pro-->
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!--Import jQuery-->
+	</head>
+	
+	<body>
+		<script>	<!--Dynamic Header-->
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('header').addClass("isScrolled");
+			}
+			else{
+				$('header').removeClass("isScrolled");
+			}
+		});
+		</script>
+		
+		<script>	<!--Dynamic Header-->
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('p#pageHeading').addClass("isScrolled");
+			}
+			else{
+				$('p#pageHeading').removeClass("isScrolled");
+			}
+		});
+		</script>
+		
+		<script>	<!--Dynamic Header-->
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('div#navButtons').addClass("isScrolled");
+			}
+			else{
+				$('div#navButtons').removeClass("isScrolled");
+			}
+		});
+		</script>
+		
+		<script>	<!--Dynamic Header-->
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('img#youtubeSocial').addClass("isScrolled");
+			}
+			else{
+				$('img#youtubeSocial').removeClass("isScrolled");
+			}
+		});
+		</script>
+		
+		<script>	<!--Dynamic Header-->
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('img#twitterSocial').addClass("isScrolled");
+			}
+			else{
+				$('img#twitterSocial').removeClass("isScrolled");
+			}
+		});
+		</script>
+		
+		<header>
+			<p id="pageHeading">Website Title</p>
+			
+			<center>
+				<div id="navButtons">
+					<a href="#">Home</a>
+					<a href="#">About</a>
+					<a href="#">Members</a>
+					<a href="#">Apply</a>
+					<a href="#">Contact</a>
+				</div>
+			</center>
+			
+			<div id="socialButtons">
+				<a href="http://www.youtube.com/user/RagingCow25" title="YouTube">
+					<img src="files/youtube.png" id="youtubeSocial">
+				</a>
+				<a href="http://www.twitter.com/RagingCow25" title="Twitter">
+					<img src="files/twitter.png" id="twitterSocial">
+				</a>
+			</div>
+		</header>
+		
+		<div style="height:10000px;">
+		</div>
+	</body>
+</html>

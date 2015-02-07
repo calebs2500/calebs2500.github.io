@@ -14,9 +14,9 @@ header {
 
 header.isScrolled  {
 	height: 80px;
-	opacity: 0.5;
 }
 
+/* Heading Text */
 p#pageHeading {
 	font-family: Source Sans Pro;
 	font-size: 72px;
@@ -34,6 +34,7 @@ p#pageHeading.isScrolled {
 	margin-top: 20px;
 }
 
+/* Navigation Buttons */
 #navButtons {
 	padding: 24px;
 	margin-top: -60px;
@@ -57,4 +58,51 @@ p#pageHeading.isScrolled {
 
 div#navButtons.isScrolled {
 	margin-top: -85px; 
+}
+
+/* Social Buttons */
+/* YouTube */
+img#youtubeSocial {
+	right: 0px;
+	top: 75px;
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	transition: margin-right 0.2s, margin-top 0.1s, right 0.4s, top 0.4s;
+}
+
+img#youtubeSocial:not(.isScrolled):hover {
+	margin-right: 10px;
+}
+
+img#youtubeSocial.isScrolled {
+	right: 20px;
+	top: 17px;
+}
+
+img#youtubeSocial.isScrolled:hover {
+	margin-top: 2px;
+}
+
+/* Twitter */
+img#twitterSocial {
+	right: 0px;
+	top: 120px;
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	transition: margin-right 0.2s, margin-top 0.1s, right 0.4s, top 0.4s;
+}
+
+img#twitterSocial:not(.isScrolled):hover {
+	margin-right: 10px;
+}
+
+img#twitterSocial.isScrolled {
+	right: 70px;
+	top: 17px;
+}
+
+img#twitterSocial.isScrolled:hover {
+	margin-top: 2px;
 }
