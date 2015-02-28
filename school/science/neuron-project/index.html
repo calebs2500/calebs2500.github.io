@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	
+		<!--Developed by Caleb Stewart: calebs2500@gmail.com-->
+		
+		<title>Neuron Explanation</title>
+		
+		<link rel="icon" type="image/png" href="files/favicon.png">
+		
+		<link href="style.css" rel="stylesheet" type="text/css"> <!--Styles-->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'> <!--Font: Source Sans Pro-->
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!--Import jQuery-->
+	</head>
+	
+	<body>
+		<script>	<!--Dynamic Header-->
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('header').addClass("isScrolled");
+			}
+			else{
+				$('header').removeClass("isScrolled");
+			}
+		});
+		</script>
+		
+		<script>	<!--Dynamic Header-->
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('p#pageHeading').addClass("isScrolled");
+			}
+			else{
+				$('p#pageHeading').removeClass("isScrolled");
+			}
+		});
+		</script>
+		
+		<script>	<!--Dynamic Header-->
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('div#navButtons').addClass("isScrolled");
+			}
+			else{
+				$('div#navButtons').removeClass("isScrolled");
+			}
+		});
+		</script>
+		
+		<script>	<!--Dynamic Header-->
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('img#youtubeSocial').addClass("isScrolled");
+			}
+			else{
+				$('img#youtubeSocial').removeClass("isScrolled");
+			}
+		});
+		</script>
+		
+		<script>	<!--Dynamic Header-->
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+				$('img#instagramSocial').addClass("isScrolled");
+			}
+			else{
+				$('img#instagramSocial').removeClass("isScrolled");
+			}
+		});
+		</script>
+		
+		<header>
+			<p id="pageHeading">Caleb's School Work</p>
+			
+			<center>
+				<div id="navButtons">
+					<a href="#">Home</a>
+					<a id="selectedTab" href="#">Science</a>
+					<a href="#">Maths</a>
+					<a href="#">French</a>
+					<a href="#">Health</a>
+				</div>
+			</center>
+			
+		</header>
+		
+		<div id="content">
+			<p id="heading">
+			Neuron Explanation
+			</p>
+			
+			<p id="text">
+			For my first Common Assessment Task in Science, I was asked to create a model of a neuron, and create a video outlining how a nerve impulse travels through a cell. Here is an image of the completed model.
+			</p>
+		
+			<center>
+				<img width="500px" src="files/neuron_model.JPG" id="image" title="Neuron Model" alt="Neuron Model">
+				<img width="500px" src="files/neuron_model_labelled.JPG" id="image" title="Labelled Neuron Model" alt="Labelled Neuron Model">
+			</center>
+			
+			<p id="text">
+			Here is my video, it has a brief, but somewhat in depth explanation of how an action potential travels through the body, via neurons.
+			</p>
+			
+			<center>
+				<iframe width="1000" height="594" src="https://www.youtube.com/embed/IBlXiBTvNA8?rel=0" frameborder="0" allowfullscreen></iframe>
+			</center>
+			
+			<p id="heading">
+			External Links
+			</p>
+			
+			<p id="text">
+			Full Size Images:<br>
+			<a href="https://drive.google.com/file/d/0B-LXvfWA2uDPTnZJeVdjcFRQU2M/view?usp=sharing">Neuron Model</a><br>
+			<a href="https://drive.google.com/file/d/0B-LXvfWA2uDPclczSlBXV0VEMlk/view?usp=sharing">Labelled Neuron Model</a><br>
+			Documents:<br>
+			<a href="https://drive.google.com/file/d/0B-LXvfWA2uDPZTNUTi0tR0V6WGM/view?usp=sharing">Neuron Labels</a><br>
+			<a href="https://drive.google.com/file/d/0B-LXvfWA2uDPMkFSZTc0SnU3Z2M/view?usp=sharing">Script for Video</a>
+			</p>
+			
+		</div>
+		
+		<footer>
+			<p>Website design and code property of <a id="footer" href="mailto:calebs2500@gmail.com">Caleb Stewart</a>, 2015.</p>
+		</footer>
+		
+	</body>
+</html>
