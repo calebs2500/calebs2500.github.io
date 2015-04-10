@@ -129,6 +129,7 @@ img#twitterBotSocial.isScrolled:hover {
 	margin-top: 2px;
 }
 
+/* Main Content */
 #content {
 	padding-top: 250px;
 	padding-bottom: 20px;
@@ -147,6 +148,27 @@ img#twitterBotSocial.isScrolled:hover {
 	z-index: -1;
 }
 
+a#link {
+	color: #829d8a;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+a#link:hover {
+	color: #000000;
+}
+
+#mailIcon {
+	height: 75px;
+	width: 75px;
+	transition: width 0.1s;
+}
+
+#mailIcon:hover {
+	width: 80px;
+}
+
+/* Footer */
 #footer {
 	position: relative;
 	bottom: 0;
