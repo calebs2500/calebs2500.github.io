@@ -158,14 +158,31 @@ a#link:hover {
 	color: #000000;
 }
 
-#mailIcon {
-	height: 75px;
-	width: 75px;
-	transition: width 0.1s;
+div#playerList > center > a#link {
+	font-size: 32px;
 }
 
-#mailIcon:hover {
-	width: 80px;
+#playerHead {
+	height: 150px;
+	width: 150px;
+	border-radius: 5px;
+	opacity: 0.75;
+	transition: opacity 0.2s;
+}
+
+#playerHead:hover {
+	opacity: 1;
+}
+
+#playerSocial {
+	height: 45px;
+	width: 45px;
+	margin-right: 10px;
+	transition: height 0.1s, width 0.1s;
+}
+
+#playerSocial:hover {
+	width: 50px;
 }
 
 /* Footer */
