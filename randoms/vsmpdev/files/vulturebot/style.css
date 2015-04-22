@@ -1,0 +1,188 @@
+body {
+	/*background-color: #7ef854; #f2f2f2*/
+	background-image: url("http://vulturesmp.com/head/back.jpg");
+	margin-bottom: -10px;
+}
+
+div#header {
+	background-color: #829d8a; /*Original Blue #56a1bc;*/
+	width: 101.2%;
+	height: 240px;
+	margin-left: -8px;
+	margin-top: -10px;
+	position: fixed;
+	transition: height 0.2s ease;
+	opacity: 0.95;
+	z-index: 1;
+}
+
+div#header.isScrolled {
+	height: 80px;
+}
+
+#headerLogo {
+	height: 200px;
+	width: 200px;
+	top: 20px;
+	position: fixed;
+	transition: height 0.4s ease, width 0.4s ease;
+}
+
+#headerLogo.isScrolled {
+	height: 60px;
+	width: 60px;
+	top: 10px;
+}
+
+/* Heading Text */
+p#pageHeading {
+	font-family: Source Sans Pro;
+	font-size: 72px;
+	font-weight: 200;
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 30px;
+	transition: font-size 0.4s ease, margin-top 0.4s ease;
+}
+
+p#pageHeading.isScrolled {
+	text-align: left;
+	font-size: 32px;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+
+/* Navigation Buttons */
+#navButtons {
+	padding: 24px;
+	margin-top: -60px;
+}
+
+#navButtons > a {
+	font-family: Source Sans Pro;
+    font-size:17px;
+    background: #838c8f;
+    padding: 12px 20px;
+    color:#FFFFFF;
+    margin-right: 5px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background 0.4s;
+}
+
+#navButtons > a:hover {
+	background-color: #000000;
+}
+
+div#navButtons.isScrolled {
+	margin-top: -85px; 
+}
+
+a#navButtonSelected {
+	background: #545a5c;
+}
+
+/* Social Buttons */
+/* @VultureSMP */
+img#twitterSocial {
+	right: 0px;
+	top: 75px;
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	transition: margin-right 0.2s, margin-top 0.1s, right 0.4s, top 0.4s;
+}
+
+img#twitterSocial:not(.isScrolled):hover {
+	margin-right: 10px;
+}
+
+img#twitterSocial.isScrolled {
+	right: 20px;
+	top: 17px;
+}
+
+img#twitterSocial.isScrolled:hover {
+	margin-top: 2px;
+}
+
+/* VultureBot */
+img#twitterBotSocial {
+	right: 0px;
+	top: 120px;
+	position: fixed;
+	width: 45px;
+	height: 45px;
+	transition: margin-right 0.2s, margin-top 0.1s, right 0.4s, top 0.4s;
+}
+
+img#twitterBotSocial:not(.isScrolled):hover {
+	margin-right: 10px;
+}
+
+img#twitterBotSocial.isScrolled {
+	right: 70px;
+	top: 17px;
+}
+
+img#twitterBotSocial.isScrolled:hover {
+	margin-top: 2px;
+}
+
+/* Main Content */
+#content {
+	padding-top: 250px;
+	padding-bottom: 20px;
+}
+#contentFrame {
+	background-color: #ccd7d9;
+	width: auto;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 8px;
+	font-family: Source Sans Pro;
+	font-size: 20px;
+	z-index: -1;
+}
+
+a#link {
+	color: #829d8a;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+a#link:hover {
+	color: #000000;
+}
+
+/* Footer */
+#footer {
+	position: relative;
+	bottom: 0;
+	width: 101.2%;
+	height: 40px;
+	margin-top: -40px;
+	margin-left: -8px;
+	background-color: #829d8a;
+	opacity: 0.8;
+	font-family: Source Sans Pro;
+	font-weight: 200;
+	color: #FFFFFF;
+	font-size: 14px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+
+#footerLink {
+	color: #ccd7d9;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+#footerLink:hover {
+	color: #FFFFFF;
+}
+
