@@ -129,7 +129,6 @@ img#twitterBotSocial.isScrolled:hover {
 	margin-top: 2px;
 }
 
-/* Main Content */
 #content {
 	padding-top: 250px;
 	padding-bottom: 20px;
@@ -158,7 +157,7 @@ a#link:hover {
 	color: #000000;
 }
 
-div#playerList > center > a#link {
+div#contentFrame > center > a#heading {
 	font-size: 32px;
 }
 
@@ -166,12 +165,6 @@ div#playerList > center > a#link {
 	height: 150px;
 	width: 150px;
 	border-radius: 5px;
-	opacity: 0.75;
-	transition: opacity 0.2s;
-}
-
-#playerHead:hover {
-	opacity: 1;
 }
 
 #playerSocial {
@@ -185,7 +178,6 @@ div#playerList > center > a#link {
 	width: 50px;
 }
 
-/* Footer */
 #footer {
 	position: relative;
 	bottom: 0;
