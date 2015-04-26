@@ -1,0 +1,59 @@
+body {
+	/*background-color: #7ef854; #f2f2f2*/
+	background-image: url("http://vulturesmp.com/head/back.jpg");
+	padding-top: 5%;
+}
+
+#heading, #subheading, #returnHome {
+	font-family: Source Sans Pro;
+	color: #000000;
+	font-weight: 200;
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: -10px;
+}
+
+#subheading {
+	font-size: 20px;
+}
+
+#returnHome {
+	text-decoration: none;
+	font-size: 15px;
+	background: #829d8a;
+    padding: 12px 20px;
+    color:#FFFFFF;
+    border-radius: 3px;
+    transition: background 0.4s;
+}
+
+#returnHome:hover {
+	background: #838c8f;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	margin-left: -8px;
+	height: 40px;
+	background-color: #829d8a;
+	opacity: 0.8;
+	font-family: Source Sans Pro;
+	font-weight: 200;
+	color: #FFFFFF;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#footerLink {
+	color: #ccd7d9;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+#footerLink:hover {
+	color: #FFFFFF;
+}
+
