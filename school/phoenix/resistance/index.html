@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	
+<html>
+	<head>
+		<!--Developed by Caleb Stewart: calebs2500@gmail.com-->
+		<title>Aboriginal Resistance</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700' rel='stylesheet' type='text/css'>
+		<script> 
+		//Cover Up
+		function shrinkCover() {
+			document.getElementById("document").style.overflow = "visible";
+			document.getElementById("header").className = "up";
+			document.getElementById("pageSubHeading").className = "up";
+			document.getElementById("arrow").className = "up";
+			document.getElementById("arrow").onclick = expandCover;
+			document.getElementById("body").className = "up";
+		}
+		</script>
+		<script>
+		//Cover Down
+		function expandCover() {
+			document.getElementById("document").style.overflow = "hidden";
+			document.getElementById("header").className = "down";
+			document.getElementById("pageSubHeading").className = "down";
+			document.getElementById("arrow").className = "down";
+			document.getElementById("arrow").onclick = shrinkCover;
+			document.getElementById("body").className = "down";
+		}
+		</script>
+		
+		<script> //Arrow Hover
+		function arrowHoverIn() {
+			document.getElementById("arrow").src = "arrowHover.png";
+		}
+		function arrowHoverOut() {
+			document.getElementById("arrow").src = "arrow.png";
+		}
+		</script>
+	</head>
+	
+	<body id="document">
+		<header id="header">
+			<div id="pageHeading">
+				<p id="pageHeading">Aboriginal Resistance</p>
+				<p id="pageSubHeading">By Caleb</p>
+				<a href="#body">
+				<img src="arrow.png" width="35px" id="arrow" onclick="shrinkCover()" onmouseover="arrowHoverIn()" onmouseout="arrowHoverOut()">
+				</a>
+			</div>
+		</header>
+		
+		<div id="body">
+			<div id="contentFrame">
+				<p id="sectionHeader">When the First Fleet arrived on Australian shores in 1788, Europeans immediately got off on the wrong foot with Aboriginals.</p>
+				<p>In 1788, eleven British ships landed at Botany Bay, near modern day Sydney. They carried over 1000 Europeans, most of which were convicted criminals. They had set out to create the first colony in Australia.</p>
+			</div>
+		</div>
+	</body>
+</html>
