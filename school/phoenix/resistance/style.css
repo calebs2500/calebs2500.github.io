@@ -76,6 +76,7 @@ header.up {
 }
 
 #contentFrame {
+	background-image: url("contentBack.png");
 	background-color: #f2f2f2;
 	border-radius: 5px;
 	height: 5000px;
@@ -93,6 +94,15 @@ header.up {
 	margin-bottom: 5px;
 }
 
+a#link {
+	color: #004c4c;
+	transition: color 0.2s;
+}
+
+a#link:hover {
+	color: #b0a9a2
+}
+
 #sectionHeader {
 	font-weight: 700;
 	font-size: 24px;
@@ -108,4 +118,78 @@ div#image {
 
 div#image > img {
 	border-radius: 5px;
+}
+
+div#divider {
+	height: 3px;
+	background-color: #004c4c;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#video {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/*Pemulwuy Images*/
+div#pemulwuyImages {
+	background-image: url("images/pemulwuy.png");
+	background-position: 0px;
+	height: 360px;
+	width: 640px;
+	border-radius: 5px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+    -ms-user-select: none;
+	transition: background-position 0.5s;
+}
+
+#pemulwuyLeftArrow, #pemulwuyRightArrow {
+	height: 197.5px;
+	width: 60px;
+	background: rgba(0,0,0,0.2);
+	transition: background 0.8s;
+	padding-top: 162.5px;
+}
+
+#pemulwuyLeftArrow:hover, #pemulwuyRightArrow:hover {
+	background: rgba(0,0,0,0.8);
+}
+
+#pemulwuyLeftArrow {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	float: left;
+}
+
+#pemulwuyRightArrow {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	float: right;
+}
+
+#arrowLeft, #arrowRight {
+	height: 40px;
+	text-align: center;
+}
+
+#arrowLeft {
+	transform: rotate(90deg);
+}
+
+#arrowRight {
+	transform: rotate(270deg);
+}
+
+div#pemulwuyDesc {
+	font-size: 14px;
+	color: #b0a9a2;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+    -ms-user-select: none;
+	width: 640px;
+	padding-top: 5px;
 }
