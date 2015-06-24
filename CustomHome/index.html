@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!--Developed by Caleb Stewart: calebs2500@gmail.com-->
+		<meta name="author" content="Caleb Stewart">
+		
+		<title>Home Page</title>
+		<link href="favicon.png" type="image/png" rel="icon">
+		
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700' rel='stylesheet' type='text/css'> <!--Font-->
+		
+		<script type="text/javascript"> <!--Credit: http://www.ricocheting.com/code/javascript/html-generator/date-time-clock-->
+		var tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+		var tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+		function GetClock(){
+		var d=new Date();
+		var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate();
+		var d=new Date();
+		var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+		if(nhour==0){ap=" AM";nhour=12;}
+		else if(nhour<12){ap=" AM";}
+		else if(nhour==12){ap=" PM";}
+		else if(nhour>12){ap=" PM";nhour-=12;}
+
+		if(nmin<=9) nmin="0"+nmin;
+
+		document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+ap+"";
+		document.getElementById('datebox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+"";
+		}
+
+		window.onload=function(){
+		GetClock();
+		setInterval(GetClock,1000);
+		}
+		</script>
+
+		<style>
+		body {
+			margin: 0px;
+			background: url("background.png");
+			background-size: cover;
+			padding-left: 20px;
+			user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			cursor: default;
+		}
+		
+		.clock {
+			font-family: Source Sans Pro;
+			font-weight: 200;
+			color: white;
+			position: absolute;
+		}
+		
+		.time {
+			font-size: 100px;
+			bottom: 50px;
+		}
+		
+		.date {
+			font-size: 40px;
+			bottom: 10px;
+		}
+		
+		input {
+			height: 30px;
+			width: 500px;
+			position: absolute;
+			bottom: 30px;
+			right: 10px;
+			border-radius: 5px;
+			background: lightgray;
+			opacity: 0.3;
+			transition: opacity 0.5s;
+			padding-left: 10px;
+			font-family: Source Sans Pro;
+			font-weight: 200;
+			color: black;
+			curor: text;
+		}
+		
+		input:hover, input:focus {
+			opacity: 1.0;
+		}
+		
+		.googleLogo {
+			position: absolute;
+			bottom: 30px;
+			right: 530px;
+			opacity: 0.4;
+		}
+		
+		.photoDescription {
+			color: gray;
+			font-family: Source Sans Pro;
+			font-weight: 200;
+			font-size: 14px;
+			position: absolute;
+			top: 3px;
+			right: 3px;
+			
+		</style>
+	</head>
+
+	<body>
+		<span class="photoDescription">Warrnambool Foreshore During Thunderstorm | Patient Eye Imaging</span>
+	
+		<div id="clockbox" class="clock time"></div>
+		<div id="datebox" class="clock date"></div>
+		
+		<img draggable="false" class="googleLogo" src="google.png" height="30px">
+		<form method="get" action="https://www.google.com/search">
+			<input id="googleSearch" type="text" name="q" placeholder="Search Google">
+		</form>
+	</body>
+</html>
+		
