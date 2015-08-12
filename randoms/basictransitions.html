@@ -1,0 +1,58 @@
+<!DOCTYPE html>	
+
+<html>
+	<body>
+		<style>
+		div#testOne {
+			width: 100px;
+			height: 100px;
+			background: red;
+		}
+		
+		div#testOne:hover {
+			background: purple;
+		}
+		
+		div#testTwo {
+			width: 100px;
+			height: 100px;
+			background: red;
+			transition: background 1s ease;
+		}
+		
+		div#testTwo:hover {
+			background: purple;
+		}
+		</style>
+		
+		<p>Make a div that changes its properties somehow:</p>
+		<code>div#testOne {
+			width: 100px;
+			height: 100px;
+			background: red;
+		}
+		
+		div#testOne:hover {
+			background: purple;
+		}</code>
+		<div id="testOne"></div>
+		
+		<br>
+		<br>
+		
+		<p>To animate the change, add a <code>transition</code> property to the default state</p>
+		<code>transition: background 1.0s ease;</code>
+		<p>Specify the property to animate, the time for the animation to take place over and the type of animation</p>
+		<code>	div#testTwo {
+			width: 100px;
+			height: 100px;
+			background: red;
+			transition: background 1s ease;
+		}
+		
+		div#testTwo:hover {
+			background: purple;
+		}</code>
+		<div id="testTwo"></div>
+	</body>
+</html>
