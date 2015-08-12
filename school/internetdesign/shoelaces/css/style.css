@@ -1,0 +1,148 @@
+body {
+	margin: 0px;
+	background: url("../head/body_background.png");
+}
+
+header {
+	background-image: url("../head/head_background.jpg");
+	background-size: 10%;
+	height: 300px;
+	width: 100%;
+	border-bottom: 8px solid #E18A07;
+	position: fixed;
+	z-index: 100;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	transition: height 0.5s ease-out;
+}
+
+header.isScrolled {
+	height: 80px;
+}
+
+#headerImage {
+	height: 280px;
+	transition: height 0.5s ease-out;
+}
+
+#headerImage.isScrolled {
+	height: 0px;
+}
+
+h1 {
+	color: #E18A07;
+	font-family: Source Sans Pro;
+	font-weight: 200;
+	font-size: 80px;
+	text-shadow: -4px -2px 4px gray;
+	position: absolute;
+	bottom: 10px;
+	left: 30px;
+	margin: 0px;
+	cursor: default;
+	transition: font-size 0.5s ease-out, bottom 0.5s ease-out;
+}
+
+h1.isScrolled {
+	bottom: 0px;
+	font-size: 70px;
+}
+
+#navButtons {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	line-height: 300px;
+	transition: line-height 0.5s ease-out;
+}
+
+div#navButtons.isScrolled {
+	line-height: 80px;
+}
+
+#navButtons > a, #navButtons > span {
+	font-family: Source Sans Pro;
+	color: whitesmoke;
+	text-decoration: none;
+	padding: 15px 15px;
+	background: #E18A07;
+	margin-left: -4px;
+	transition: background 0.5s;
+}
+
+#navButtons > a:hover {
+	background: #c77a06;
+}
+
+span#navFiller {
+	cursor: default;
+	color: #E18A07;
+}
+
+.leftButton {
+	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px;
+}
+
+div#contentWrapper {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	min-height: 100vh;
+}
+
+div#content {
+	border-radius: 15px;
+	background: url("../head/content_background.png");
+	height: 3000px;
+	padding: 20px 50px;
+	margin: 350px 150px 90px 150px;
+	z-index: -1;
+	border: 1px solid #E18A07;
+	font-family: Source Sans Pro;
+	font-size: 20px;
+	transition: margin 0.5s ease-out;
+}
+
+div#content.isScrolled {
+	margin: 240px 150px 90px 150px;
+}
+
+h2 {
+	margin: 0px;
+	font-family: Source Sans Pro;
+	font-weight: 700;
+	font-size: 35px;
+	color: #E18A07;
+	text-align: center;
+}
+
+div#headingDivider {
+	background: #E18A07;
+	height: 1px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	background: rgba(220,220,220,0.4);
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-family: Source Sans Pro;
+	color: gray;
+	border-top: 8px solid #E18A07;
+}
+
+#link {
+	color: #E18A07;
+	transition: color 0.5s;
+	text-decoration: none;
+}
+
+#link:hover {
+	color: gray;
+}
