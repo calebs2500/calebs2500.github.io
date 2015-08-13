@@ -1,0 +1,67 @@
+body {
+	margin: 0px;
+	background: url("../head/background.jpg");
+}
+
+h1 {
+	font-family: 'Nothing You Could Do', cursive;
+	color: saddlebrown;
+	text-align: center;
+	text-shadow: -2px -2px 1px black;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	cursor: default;
+}
+
+h2 {
+	font-family: 'Nothing You Could Do', cursive;
+	color: darkgoldenrod;
+	text-align: center;
+	text-shadow: -2px -2px 1px black;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	cursor: default;
+}
+
+#contentWrapper {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#content {
+	margin: 150px 150px 20px 150px;
+	background: url("../head/content_background.jpg");
+	border: 6px ridge sienna;
+	border-radius: 8px;
+	padding: 30px 50px 30px 50px;
+	font-size: 24px;
+	color: sienna;
+	font-family: 'Nothing You Could Do', cursive;
+	font-weight: bold;
+}
+
+p {
+	margin: 0;
+}
+
+#date {
+	text-decoration: underline;
+	color: saddlebrown;
+}
+
+#divider {
+	height: 3px;
+	background: saddlebrown;
+	margin: 50px 0px;
+}
+
+#intro {
+	font-style: italic;
+	font-family: sans-serif;
+	font-weight: 200;
+	font-size: 14px;
+}
