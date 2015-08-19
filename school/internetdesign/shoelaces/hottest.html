@@ -6,10 +6,11 @@
 		<meta charset="UTF-8">
 		<meta name="author" content="Caleb Stewart">
 		
-		<title>Latest Laces | Home</title>
+		<title>Latest Laces | Hottest</title>
 		<link type="image/png" rel="icon" href="">
 		
 		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<link type="text/css" rel="stylesheet" href="css/style_hottest.css">
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700' rel='stylesheet' type='text/css'> <!--Font-->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> <!--Import jQuery-->
 		<script src="js/primary.js"></script>
@@ -21,9 +22,9 @@
 		<img id="headerImage" src="head/laces.png" alt="header shoelaces" draggable="false">
 		<h1 id="heading">Latest Laces</h1>
 		<div id="navButtons">
-			<a class="leftButton" id="selectedTab" href="index.html">Home</a>
+			<a class="leftButton" href="index.html">Home</a>
 			<a href="store.html">Store</a>
-			<a href="hottest.html">Hottest Laces</a>
+			<a href="hottest.html" id="selectedTab">Hottest Laces</a>
 			<a href="findus.html">Find Us</a>
 			<span id="navFiller">fillerfillerfiller</span>
 		</div>
@@ -31,8 +32,47 @@
 	
 	<div id="contentWrapper">
 		<div id="content">
-			<h2>Home</h2>
+			<h2>Hottest Laces</h2>
 			<div id="headingDivider"></div>
+			<center>
+				<p>The Customer's Choices! - These laces are trending right now, so get in before they run out!</p>
+			</center>
+			
+			<div id="product">
+				<div id="itemImage">
+					<img src="files/hottest/pink.png" alt="Pink Laces">
+				</div>
+				<div id="itemDesc">
+					<span>Pink Laces</span>
+				</div>
+				<div id="itemBuy">
+					<a href="store.html#pink">$7.99 >Buy Now</a>
+				</div>
+			</div>
+			<br>
+			<div id="product">
+				<div id="itemImage">
+					<img src="files/hottest/rainbow.png" alt="Rainbow Laces">
+				</div>
+				<div id="itemDesc">
+					<span>Rainbow Laces</span>
+				</div>
+				<div id="itemBuy">
+					<a href="store.html#rainbow">$11.99 >Buy Now</a>
+				</div>
+			</div>
+			<br>
+			<div id="product">
+				<div id="itemImage">
+					<img src="files/hottest/coloured.png" alt="Mixed Coloured Laces (15 pack)">
+				</div>
+				<div id="itemDesc">
+					<span>Mixed Coloured Laces (15 pack)</span>
+				</div>
+				<div id="itemBuy">
+					<a href="store.html#mixed">$19.99 >Buy Now</a>
+				</div>
+			</div>
 		</div>
 		
 		<footer>

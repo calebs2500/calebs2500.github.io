@@ -1,6 +1,7 @@
 body {
 	margin: 0px;
 	background: url("../head/body_background.png");
+	overflow-x: hidden;
 }
 
 header {
@@ -71,6 +72,10 @@ div#navButtons.isScrolled {
 	transition: background 0.5s;
 }
 
+a#selectedTab {
+	background: #c77a06;
+}
+
 #navButtons > a:hover {
 	background: #c77a06;
 }
@@ -96,7 +101,6 @@ div#contentWrapper {
 div#content {
 	border-radius: 15px;
 	background: url("../head/content_background.png");
-	height: 3000px;
 	padding: 20px 50px;
 	margin: 350px 150px 90px 150px;
 	z-index: -1;
@@ -135,6 +139,9 @@ footer {
 	font-family: Source Sans Pro;
 	color: gray;
 	border-top: 8px solid #E18A07;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 
 #link {

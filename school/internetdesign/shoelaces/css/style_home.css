@@ -26,7 +26,7 @@
 #slide1.galleryHidden, #slide2.galleryHidden, #slide3.galleryHidden {
 	opacity: 0;
 	z-index: 1;
-}
+}	
 
 #slideDesc {
 	font-family: Source Sans Pro;
@@ -37,6 +37,7 @@
 	bottom: 8%;
 	right: 2%;
 	cursor: default;
+	text-shadow: 1px 1px 1px white, 1px -1px 1px white, -1px 1px 1px white, -1px -1px 1px white;
 }
 
 #slideDesc > a {
@@ -47,8 +48,49 @@
 	background: #E18A07;
 	transition: background 0.5s;
 	border-radius: 5px;
+	text-shadow: none;
 }
 
 #slideDesc > a:hover {
+	background: #c77a06;
+}
+
+#quote {
+	font-style: oblique;
+}
+
+#special {
+	text-align: center;
+}
+
+#specialTitle {
+	color: #E18A07;
+	font-size: 32px;
+	
+}
+
+#specialImage {
+	width: 50%;
+	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+#specialLink {
+	padding: 5px 7px;
+	color: gainsboro;
+	font-size: 24px;
+	font-weight: 200;
+	text-decoration: none;
+	background: #E18A07;
+	transition: background 0.5s;
+	border-radius: 5px;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+#specialLink:hover {
 	background: #c77a06;
 }

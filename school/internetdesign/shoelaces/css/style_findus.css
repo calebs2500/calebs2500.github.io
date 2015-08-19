@@ -1,0 +1,14 @@
+iframe {
+	height: 400px;
+	width: 100%;
+	border: 8px solid lightgray;
+	border-radius: 5px;
+}
+
+span#day {
+	color: #E18A07;
+}
+
+#centered {
+	text-align: center;
+}

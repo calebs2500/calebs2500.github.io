@@ -1,4 +1,4 @@
-window.onload = setTimeout(show2, 8000);
+window.onload = setTimeout(show2, 8000)
 
 var timer;
 

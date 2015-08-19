@@ -1,0 +1,19 @@
+#window {
+	width: 100vw;
+	height: -moz-calc(100vh - 80px);
+	height: -o-calc(100vh - 80px);
+	height: -webkit-calc(100vh - 80px);
+	height: calc(100vh - 80px);
+	display: table;
+}
+
+#thanks {
+	font-family: Source Sans Pro;
+	font-weight: 200;
+	font-size: 80px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: darkgray;
+	transition: color 800ms, font-size 800ms;
+}
