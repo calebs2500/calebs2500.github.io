@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+p {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 36px;
+	font-style: italic;
+	line-height: normal;
+	text-decoration: none;
+
+}
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 36px;
+	font-style: italic;
+	line-height: normal;
+}p {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 36px;
+	font-style: italic;
+	line-height: normal;
+}
