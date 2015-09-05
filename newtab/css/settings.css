@@ -1,0 +1,95 @@
+#move {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 300ms;
+}
+
+#move > img {
+	height: 30px;
+	width: 30px;
+	margin-top: 10px;
+}
+
+#move:hover {
+	background-color: darkgray;
+}
+
+#positionOptionWrapper {
+	background: rgba(0,0,0,0.8);
+	border-radius: 5px;
+	border: 2px solid rgba(0,0,0,0);
+	transition: height 800ms, width 800ms;
+	position: absolute;
+	left: 5px;
+	bottom: 55px;
+}
+
+#positionOptionWrapper.hidden {
+	height: 0px;
+	width: 0px;
+}
+
+#positionOptionWrapper.shown {
+	height: 130px;
+	width: 130px;
+	border: 2px solid white;
+}
+
+#positionOptionWrapper > div {
+	background: white;
+	opacity: 0.8;
+	border-radius: 5px;
+	height: 30px;
+	width: 30px;
+	position: absolute;
+}
+
+#positionOptionTopLeft {
+	top: 10px;
+	left: 10px;
+}
+
+#positionOptionTop {
+	top: 10px;
+	left: 50px;
+}
+
+#positionOptionTopRight {
+	top: 10px;
+	left: 90px;
+}
+
+#positionOptionLeft {
+	top: 50px;
+	left: 10px;
+}
+
+#positionOptionMiddle {
+	top: 50px;
+	left: 50px;
+}
+
+#positionOptionRight {
+	top: 50px;
+	left: 90px;
+}
+
+#positionOptionBottomLeft {
+	top: 90px;
+	left: 10px;
+}
+
+#positionOptionBottom {
+	top: 90px;
+	left: 50px;
+}
+
+#positionOptionBottomRight {
+	top: 90px;
+	left: 90px;
+}

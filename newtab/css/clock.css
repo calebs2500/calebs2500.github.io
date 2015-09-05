@@ -1,0 +1,69 @@
+#time {
+	color: white;
+	font-family: Oxygen, sans-serif;
+	font-weight: 300;
+	user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	cursor: default;
+	position: absolute;
+}
+
+#clockbox {
+	font-size: 80px;
+	text-align: center;
+}
+
+#datebox {
+	font-size: 40px;
+	text-align: center;
+}
+
+#time.middle {
+	left: 0;
+	right: 0;
+	top: calc(50% - 75.5px);
+}
+
+#time.top {
+	left: 0;
+	right: 0;
+	top: 10px;
+}
+
+#time.bottom {
+	bottom: 60px;
+	left: 0;
+	right: 0;
+}
+
+#time.left {
+	top: calc(50% - 75.5px);
+	left: 10px;
+}
+
+#time.right {
+	top: calc(50% - 75.5px);
+	right: 10px;
+}
+
+#time.topleft {
+	top: 10px;
+	left: 10px;
+}
+
+#time.topright {
+	top: 10px;
+	right: 10px;
+}
+
+#time.bottomleft {
+	bottom: 60px;
+	left: 10px;
+}
+
+#time.bottomright {
+	bottom: 60px;
+	right: 10px;
+}
+	
