@@ -37,59 +37,65 @@
 #positionOptionWrapper.shown {
 	height: 130px;
 	width: 130px;
-	border: 2px solid white;
+	border: 1px solid white;
 }
 
-#positionOptionWrapper > div {
+#positionOptionWrapper > div  {
 	background: white;
-	opacity: 0.8;
+	opacity: 0.6;
 	border-radius: 5px;
-	height: 30px;
-	width: 30px;
+	height: 0px;
+	width: 0px;
 	position: absolute;
+	transition: opacity 400ms, height 800ms, width 800ms;
+	cursor: pointer;
 }
 
-#positionOptionTopLeft {
+#positionOptionWrapper > div:hover {
+	opacity: 1.0;
+}
+
+#positionOptionWrapper > div.topleft {
 	top: 10px;
 	left: 10px;
 }
 
-#positionOptionTop {
+#positionOptionWrapper > div.top {
 	top: 10px;
 	left: 50px;
 }
 
-#positionOptionTopRight {
+#positionOptionWrapper > div.topright {
 	top: 10px;
 	left: 90px;
 }
 
-#positionOptionLeft {
+#positionOptionWrapper > div.left {
 	top: 50px;
 	left: 10px;
 }
 
-#positionOptionMiddle {
+#positionOptionWrapper > div.middle {
 	top: 50px;
 	left: 50px;
 }
 
-#positionOptionRight {
+#positionOptionWrapper > div.right {
 	top: 50px;
 	left: 90px;
 }
 
-#positionOptionBottomLeft {
+#positionOptionWrapper > div.bottomleft {
 	top: 90px;
 	left: 10px;
 }
 
-#positionOptionBottom {
+#positionOptionWrapper > div.bottom {
 	top: 90px;
 	left: 50px;
 }
 
-#positionOptionBottomRight {
+#positionOptionWrapper > div.bottomright {
 	top: 90px;
 	left: 90px;
 }

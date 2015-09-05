@@ -7,6 +7,7 @@
 	-ms-user-select: none;
 	cursor: default;
 	position: absolute;
+	transition: left 3s, right 3s, top 3s, bottom 3s;
 }
 
 #clockbox {
