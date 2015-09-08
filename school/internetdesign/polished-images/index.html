@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Polished Images</title>
+    <style>
+    body {
+		text-align: center;
+		background: slategray;
+        margin: 0;
+        padding: 0 25%;
+    }
+
+    p {
+        color: lightskyblue;
+        font-size: 18px;
+        font-family: Oxygen;
+        font-weight: 400;
+    }
+
+    .divider {
+        background: chartreuse;
+        height: 5px;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+    }
+	
+	.smallDivider {
+		height: 3px;
+		width: 100%;
+		background: chartreuse;
+	}
+
+    h1 {
+        font-family: Oxygen, sans-serif;
+        color: skyblue;
+    }
+
+    img {
+        height: 200px;
+    }
+	  
+	code {
+		color: lawngreen;
+	}	
+		
+    .img1 {
+        border-style: ridge;
+		border-color: chartreuse;
+		border-width: 10px;
+    }
+	
+	.img2 {
+		border-top: 10px dotted lawngreen;
+		border-right: 10px ridge skyblue;
+		border-bottom: 10px solid gainsboro;
+		border-left: 10px double yellow;
+	}
+	
+	.img3 {
+		border-radius: 10px;
+		border: 10px ridge chartreuse;
+	}
+	
+	.img4 {
+		border: 10px ridge chartreuse;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 30px;
+		border-bottom-left-radius: 10px;
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <h1>Polish your Images on a Website!</h1>
+    <div class="divider"></div>
+    
+	<br><br>
+	
+    <img src="img1.jpg" alt="mountain"><br>
+    <p>When you first insert an image into a HTML document, it looks pretty basic. The borders are harsh, and there's not much definition.</p>
+    <p>You can add some extra CSS styles to make them that bit more special.</p><br>
+	
+	<div class="smallDivider"></div>
+	
+	<p>To add CSS styles to your HTML, first declare a class for your element, it can be called anything.</p>
+	<p><code>&lt;img src=&quot;img1.jpg&quot; alt=&quot;mountains&quot; class=&quot;myclass&quot;&gt;</code></p>
+	<p>Then, in your CSS document, add an entry for your new class.</p>
+	<p><code>.myclass {}</code></p>
+	<p>Then, you can add each property:</p>
+	<p><code>.myclass {border-style: ridge; border-color: chartreuse; border-width: 10px;}</code></p>
+	
+	<div class="smallDivider"></div>
+	
+	<br><br>
+    
+	<img src="img1.jpg" alt="mountain" class="img1" id="img1"><br>
+		<button onclick="document.getElementById('img1').style.borderStyle = 'solid'">solid</button>
+		<button onclick="document.getElementById('img1').style.borderStyle = 'dotted'">dotted</button>
+		<button onclick="document.getElementById('img1').style.borderStyle = 'dashed'">dashed</button>
+		<button onclick="document.getElementById('img1').style.borderStyle = 'double'">double</button>
+		<button onclick="document.getElementById('img1').style.borderStyle = 'groove'">groove</button>
+		<button onclick="document.getElementById('img1').style.borderStyle = 'ridge'">ridge</button>
+		<button onclick="document.getElementById('img1').style.borderStyle = 'inset'">inset</button>
+		<button onclick="document.getElementById('img1').style.borderStyle = 'outset'">outset</button>
+    <p>This image has a border on it, you can do this using the CSS border properties, they are as follows:</p>
+	<p><code>border-color, border-style & border-width</code></p>
+	<p><code>border-style</code> is a required property, you <em>must</em> use it for the border to work. It defines what the border will look like, you can use <code>solid, dotted, dashed, double, groove, ridge, inset or outset.</code> Click on the buttons to see what each look like.</p>
+	<p><code>border-color</code> defines the colour of the border. You can use colour names, hex colour codes and rgb/rgba colour codes.</p>
+	<p><code>border-width</code> defines how thick the border is, you can use any unit supported by html, but pixels (px) is the most common.</p>
+	
+	<p>If you are competent with using the border properties, you may be interested in learning to use the shorthand border property. It allows you to compact all this code into one declaration:</p>
+	<p><code>border: 10px ridge chartreuse;</code></p>
+	<p>First specify the width, then the style, and finally the colour. Separate them with spaces. This is useful to keep your CSS more organised and save time typing.</p>
+	
+	<div class="smallDivider"></div>
+	
+	<br><br>
+    
+	<img src="img1.jpg" alt="mountain" class="img2">
+	<p>You can take your borders one step further. It is possible in CSS to make every border different.</p>
+	<p>You can use the CSS properties <code>border-top-style, border-top-width, border-top-color</code> etc, but this means using 12 properties to style the whole image (3 for each side). Instead, we can use the shorthand property we just learnt to declare the value of all three properties at once.</p>
+	<p><code>.myclass {border-top: 10px solid green, border-right: 10px dashed yellow; border-bottom: 10px double gray; border-left: 10px ridge red;}</code></p>
+	<p>Be careful with this though, because using too much variety can make your page look too busy and make it harsh to view.</p>
+	
+	<div class="smallDivider"></div>
+	
+	<br><br>
+    
+	<img src="img1.jpg" alt="mountain" class="img3">
+	<p>This image has a border radius. See that subtle curve on the corners? That's what a radius does. It adds a little more detail to the image and can make it look more professional.</p>
+	<p>Access this by using the CSS property <code>border-radius</code> and setting it to the appropriate value. Use pixels (px) or a percent value e.g. 30%.</p>
+	<img src="img1.jpg" alt="mountain" class="img4">
+	<p>You can also style each corner individually using <code>border-top-left-radius, border-top-right-radius, border-bottom-right-radius & border-bottom-left-radius</code></p>
+	
+	<div class="smallDivider"></div>
+	
+	<br><br>
+	
+	<img src="img1.jpg" alt="mountain" draggable="false">
+	<p>If your image is a part of a header or not a main focus of the page, you should consider disabling dragging. Try dragging this image and then try dragging one of the previous ones. Do you see the difference?</p>
+	<p>This effect can be achieved by using the <code>draggable</code> attribute on the image.</p>
+	<p><code>&lt;img src=&quot;img1.jpg&quot; alt=&quot;mounatin&quot; draggable=&quot;false&quot;&gt;</code></p>
+  </body>
+</html>
