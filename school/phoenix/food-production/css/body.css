@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	background: darkgray;
+	overflow: hidden;
+}
+
+#contentWrapper {
+	width: 100vw;
+}
+
+#contentFrame {
+	background: whitesmoke;
+	width: calc(80% - 8px);
+	height: calc(100% - 30px - 8px);
+	margin-top: 15px;
+	margin-left: 10%;
+	padding: 4px;
+	border-radius: 12px;
+}
+
+#contentBorder {
+	border: 1px dashed deepskyblue;
+	border-radius: 12px;
+	height: 100%;
+	overflow: scroll;
+	position: relative;
+}
+
+.content {
+	padding: 12px 20px;
+	font-size: 24px;
+	font-family: Oxygen, sans-serif;
+}
+
+#content2, #content2, #content3, #content4, #content5, #content6, #content7{
+	display: none;
+}
+
+#contentCover {
+	transition: opacity 500ms;
+	background: whitesmoke;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	border-radius: 12px;
+	opacity: 0;
+}
