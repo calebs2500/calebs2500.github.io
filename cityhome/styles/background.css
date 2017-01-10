@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: lightskyblue;
+	overflow: hidden;
+	transition: background 5s ease;
+}
+
+.column {
+	width: 10vw;
+	height: 100vh;
+	position: absolute;
+	z-index: 200;
+}
+
+.column.c1 {
+	left: 0vw;
+}
+
+.column.c2 {
+	left: 10vw;
+}
+
+.column.c3 {
+	left: 20vw;
+}
+
+.column.c4 {
+	left: 30vw;
+}
+
+.column.c5 {
+	left: 40vw;
+}
+
+.column.c6 {
+	left: 50vw;
+}
+
+.column.c7 {
+	left: 60vw;
+}
+
+.column.c8 {
+	left: 70vw;
+}	
+
+.column.c9 {
+	left: 80vw;
+}
+
+.column.c10 {
+	left: 90vw;
+}
+
+.layer {
+	position: absolute;
+	height: 100vh;
+	bottom: -30px;
+	transition: left 800ms ease-out;
+}
+
+.layer.night {
+	opacity: 0;
+	transition: opacity 5s ease, left 800ms ease-out;
+}
+
+@keyframes cloudMove {
+	from {background-position: 0px;}
+	to {background-position: 600px;}
+}
+
+.clouds {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 234px;
+	width: 100vw;
+	background: url("../images/clouds.png");
+	animation: cloudMove 60s linear 0s infinite normal;
+	transition: opacity 5s;
+}

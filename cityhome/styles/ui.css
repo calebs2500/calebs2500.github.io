@@ -1,0 +1,96 @@
+#clockbox {
+	z-index: 100;
+	position: absolute;
+	top: 25vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+	font-family: Exo;
+	font-size: 72px;
+	font-weight: 800;
+	color: black;
+	transition: font-size 800ms ease, top 800ms ease, color 5s ease;
+}
+
+#clockbox.cursorOut {
+	font-size: 96px;
+	top: 35vh;
+	transition: font-size 800ms ease 800ms, top 800ms ease 800ms, color 5s ease;
+}
+
+.search {
+	position: absolute;
+	top: 35vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	max-width: 90vw;
+	height: 40px;
+	border-bottom: solid 5px black;
+	z-index: 300;
+	transition: width 400ms ease 800ms, border-bottom 5s ease, color 5s ease;
+}
+
+.search.cursorOut {
+	width: 0;
+	transition: width 400ms ease 400ms;
+}
+
+.engineLogo {
+	position: absolute;
+	left: 0;
+	height: 40px;
+	transition: opacity 400ms ease 1200ms;
+}
+
+.engineLogo.cursorOut {
+	opacity: 0;
+	transition: opacity 400ms ease ;
+}
+
+.searchIcon {
+	position: absolute;
+	left: 40px;
+	height: 40px;
+	transition: opacity 400ms ease 1200ms;
+}
+
+.searchIcon.cursorOut {
+	opacity: 0;
+	transition: opacity 400ms ease;
+}
+
+.searchInput {
+	position: absolute;
+	left: 80px;
+	width: calc(100% - 80px - 20px);
+	height: 40px;
+	background: none;
+	border: none;
+	padding: 0 10px;
+	font-family: Source Sans Pro;
+	color: black;
+	font-size: 20px;
+	transition: opacity 400ms ease 1200ms, color 5s;
+}
+
+.searchInput:focus {
+	outline: none;
+}
+
+.searchInput.cursorOut {
+	opacity: 0;
+	transition: opacity 400ms ease, color 5s;
+}
+
+.bodyCover {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	visibility: hidden;
+	background: black;
+	opacity: 0;
+	z-index: 400;
+	transition: opacity 500ms ease;
+}

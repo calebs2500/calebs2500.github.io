@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<!--Developed by Caleb Stewart: calebs2500@gmail.com-->
+		<meta charset="UTF-8">
+		<meta name="author" content="Caleb Stewart">
+			
+		<title>Home</title>
+		<link type="image/png" rel="icon" href="images/favicon.png">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> <!--jQuery Import-->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Exo:400,800" rel="stylesheet">
+			
+		<link type="text/css" rel="stylesheet" href="styles/background.css">
+		<link type="text/css" rel="stylesheet" href="styles/ui.css">
+		<script src="scripts/background.js"></script>
+		<script src="scripts/ui.js"></script>
+		<script src="scripts/launch.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="clouds"></div>
+		
+		<img class="layer l1" src="images/layer1.png" draggable="false">
+		<img class="layer l2 night" src="images/layer2under.png" draggable="false">
+		<img class="layer l2" src="images/layer2.png" draggable="false">
+		
+		<div id="clockbox" class="cursorOut"></div>
+		
+		<div class="bodyCover"></div>
+		
+		<div class="column c1" onmouseover="move(1, 50)">
+		</div>
+		<div class="column c2" onmouseover="move(2, 40)">
+		</div>
+		<div class="column c3" onmouseover="move(3, 30)">
+		</div>
+		<div class="column c4" onmouseover="move(4, 20)">
+		</div>
+		<div class="column c5" onmouseover="move(5, 10)">
+		</div>
+		<div class="column c6" onmouseover="move(6, 10)">
+		</div>
+		<div class="column c7" onmouseover="move(7, 20)">
+		</div>
+		<div class="column c8" onmouseover="move(8, 30)">
+		</div>
+		<div class="column c9" onmouseover="move(9, 40)">
+		</div>
+		<div class="column c10" onmouseover="move(10, 50)">
+		</div>
+		
+		<div class="search cursorOut">
+			<img class="searchIcon cursorOut" src="images/search.png" draggable="false">
+			<img class="searchIcon cursorOut night" src="images/searchunder.png" draggable="false">
+			<img class="engineLogo cursorOut" src="images/google.png" draggable="false">
+			<form class="searchField" method="get" action="https://www.google.com/search">
+				<input class="searchInput cursorOut" type="text" name="q" placeholder="Search Google">
+			</form>
+		</div>
+	</body>
+</html>
