@@ -57,3 +57,25 @@ function idle() {
 		idleTime = 0;
 	});
 }
+
+var currentMessage;
+
+function showMessage(id) {
+	$("." + id).css("display", "block");
+	$(".message, .innerMessage").css("visibility", "visible");
+	$(".message").css("background", "rgba(0,0,0,0.6)");
+	$(".innerMessage").css("background", "rgba(0,0,0,0.9)");
+	currentMessage = id;
+}
+
+function hideMessage() {
+	$(".message, .innerMessage").css("background", "rgba(0,0,0,0.0)");
+	setTimeout(function() {
+		$("." + currentMessage).css("display", "block");
+		$(".message, .innerMessage").css("visibility", "hidden");
+	},500);
+}
+
+function firstLaunch() {
+	showMessage("m1");
+}

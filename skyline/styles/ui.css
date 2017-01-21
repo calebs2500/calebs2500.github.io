@@ -94,3 +94,95 @@
 	z-index: 400;
 	transition: opacity 500ms ease;
 }
+
+.message {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	background: rgba(0,0,0,0.0);
+	visibility: visible;
+	z-index: 400;
+	transition: background 500ms ease;
+	visibility: hidden;
+}
+
+.innerMessage {
+	width: 800px;
+	max-width: 90vw;
+	max-height: 90vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: absolute;
+	left: 50vw;
+	top: 50vh;
+	z-index: 500;
+	transform: translate(-50%, -50%);
+	background: rgba(0,0,0,0.0);
+	border-radius: 10px;
+	border: solid 2px white;
+	transition: background 500ms ease;
+	visibility: hidden;
+}
+
+.m1, .m2, .m3 {
+	display: none;
+}
+
+.messageHeading {
+	color: white;
+	font-family: Exo;
+	font-weight: 400;
+	font-size: 24px;
+	text-align: center;
+}
+
+.messageContent {
+	color: white;
+	font-family: Source Sans Pro;
+	font-size: 18px;
+	text-align: center;
+}
+
+.messageLink {
+	color: gray;
+	transition: color 500ms;
+}
+
+.messageLink:hover {
+	color: white;
+}
+
+.wuLogo {
+	width: 200px;
+}
+
+.messageClose {
+	text-align: center;
+}
+
+.messageClose > button {
+	background: rgba(255, 255, 255, 0.8);
+	padding: 5px 12px;
+	border-right: 0px solid;
+	/*border-bottom: 4px solid rgba(255, 255, 255, 0.5);*/
+	border-bottom: 0px solid;
+	border-top: 0px solid;
+	border-left: 0px solid;
+	border-radius: 5px;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-family: Source Sans Pro;
+	color: black;
+	margin: 15px 0;
+	cursor: pointer;
+	position: relative;
+	transition: transform 300ms;
+}
+
+.messageClose > button:hover {
+	-ms-transform: scale(0.95, 0.95);
+	-webkit-transform: scale(0.95, 0.95);
+	transform: scale(0.95, 0.95);
+}

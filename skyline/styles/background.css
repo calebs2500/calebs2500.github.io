@@ -83,3 +83,7 @@ body {
 	animation: cloudMove 60s linear 0s infinite normal;
 	transition: opacity 5s;
 }
+
+.searchIcon.night {
+	visibility: hidden;
+}

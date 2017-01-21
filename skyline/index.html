@@ -6,7 +6,7 @@
 		<meta charset="UTF-8">
 		<meta name="author" content="Caleb Stewart">
 			
-		<title>Home</title>
+		<title>Home - Skyline</title>
 		<link type="image/png" rel="icon" href="images/favicon.png">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> <!--jQuery Import-->
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700' rel='stylesheet' type='text/css'>
@@ -30,6 +30,22 @@
 		<div id="clockbox" class="cursorOut"></div>
 		
 		<div class="bodyCover"></div>
+		<div class="message">
+			<div class="innerMessage">
+				<p class="messageHeading m1">Welcome to Skyline</p>
+				<p class="messageContent m1"><strong>Please allow Skyline to use your location.</strong> We use your location to dynamically activate night mode based on your local sunset and sunrise. We do not store your location.</p>
+				<p class="messageContent m1">Sunrise and sunset data provided by <a class="messageLink" href="https://wunderground.com">Weather Underground</a>.</p>
+				<p class="messageContent m1"><img class="wuLogo" src="images/wunderground.png" alt="Weather Underground Logo"></p>
+				
+				<p class="messageHeading m2">Location Error</p>
+				<p class="messageContent m2">Your browser does not allow geolocation.</p>
+				
+				<p class="messageHeading m3">Geolocation Error</p>
+				<p class="messageContent m3">We could not determine the data for your location. Skyline will use the default sunrise and sunset (7am & 7pm).</p>
+				
+				<p class="messageClose"><button onclick="hideMessage()">Close</button></p>
+			</div>
+		</div>
 		
 		<div class="column c1" onmouseover="move(1, 50)">
 		</div>
