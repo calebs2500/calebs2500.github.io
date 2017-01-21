@@ -47,7 +47,7 @@ var setHour;
 var setMin;
 
 function getAstronomy() {	
-	$.get("http://api.wunderground.com/api/" + apiKey + "/astronomy/lang:EN/q/" + lat + "," + lng + ".json", function(data) {
+	$.get("https://api.wunderground.com/api/" + apiKey + "/astronomy/lang:EN/q/" + lat + "," + lng + ".json", function(data) {
 		riseHour = (data.moon_phase.sunrise.hour);
 		riseMin = (data.moon_phase.sunrise.minute);
 		setHour = (data.moon_phase.sunset.hour);
